@@ -3,62 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>A Book - Landing Page</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="./img/pile.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section>
-        <div class="container">
+    <section id="a-book">
+        <div class="hidden-bar">
+            <ul>
+                <li>
+                    <a href="#a-book" class="fw-bold active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#features-sec">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-star" viewBox="0 0 16 16">
+                            <path d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.178.178 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.178.178 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.178.178 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.178.178 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.178.178 0 0 0 .134-.098L7.84 4.1z"/>
+                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#pricing-sec">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#newsletter-sec">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
             <div class="navigation-bar">
                 <ul>
                     <li>
-                        <a class="active" href="#">A Book</a>
+                        <a href="#a-book" class="fw-bold active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Features</a>
+                        <a href="#features-sec">Features</a>
                     </li>
                     <li>
-                        <a href="#">Pricing</a>
+                        <a href="#pricing-sec">Pricing</a>
                     </li>
                     <li>
-                        <a href="#">Newsletter</a>
+                        <a href="#newsletter-sec">Newsletter</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="container col-xxl-8 px-4 py-5">
+        
+        <div class="container col-xxl-8 px-4 py-5 mar-top">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="./img/b2-png.png" class="d-block mx-lg-auto img-fluid" alt="A BooK" width="700" height="600" loading="lazy">
+                <img src="./img/book.png" class="d-block mx-lg-auto img-fluid" alt="A BooK" width="600" height="600" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3 theme-head-font theme-txt-color">A Book</h1>
-                <p class="lead theme-txt-color theme-main-font">Many corporations have slick, flashy mission statements that 
-                    ultimately do little to motivate employees and less to impress customers, investors, and partners.
-                    But there is a way to share your excitement for the future of your company in a clear, 
-                    compelling, and powerful way and entrepreneur and business growth expert Cameron 
-                    Herold can show you how.</p>
+                <h1 class="display-5 fw-bold lh-1 mb-3 theme-head-font theme-txt-color theme-h1">A Book</h1>
+                <p class="lead theme-txt-color theme-main-font theme-p">Bro ipsum dolor sit amet grab pipe flowy, booter caballerial stoked piste. Sketching frontside poaching ripper, pow pow wheels bro euro. 
+                    Switch sketching punter pow butter noodle wheels skinny glades avie. Gaper bonk stoked air 360 berm japan air.
+                    Pow pow betty drop fatty. 360 frontside gaper jib. Giblets laps bro, trail swag greasy betty fatty nose. 
+                    Schwag afterbang daffy stoked gorby liftie flowy bear trap saddle noodle hurl carcass pow.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Buy Now</button>
+                <a href="#pricing-sec" class="btn btn-light btn-lg px-4 me-md-2">Buy Now</a>
                 </div>
             </div>
             </div>
         </div>
     </section>
-    <section>
-        
-    </section>  
+    <section id="features-sec">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <h2 class="theme-h2 theme-head-font theme-txt-color">Features</h2>
+                    <hr />
+                </div>    
+            </div>        
+            <div class="row mb-2">
+                <div class="col-md-6">
+                <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative feature-box-shadow-left">
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0 theme-head-font theme-txt-color">Multi-Color</h3> <hr />
+                    <p class="card-text mb-auto theme-main-font theme-txt-color">Bro ipsum dolor sit amet grab pipe flowy, booter caballerial stoked piste. Sketching frontside poaching ripper, pow pow wheels bro euro. 
+                        Switch sketching punter pow butter noodle wheels skinny glades avie. Gaper bonk stoked air 360 berm japan air.</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" alt="Multi colors" src="./img/2-books-png-image.png">
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative feature-box-shadow-right">
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0 theme-head-font theme-txt-color">Page Quality</h3> <hr />
+                    <p class="mb-auto theme-main-font theme-txt-color">Bro ipsum dolor sit amet grab pipe flowy, booter caballerial stoked piste. Sketching frontside poaching ripper, pow pow wheels bro euro. 
+                        Switch sketching punter pow butter noodle wheels skinny glades avie. Gaper bonk stoked air 360 berm japan air.</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" alt="Page quality and quantity" src="./img/pages.png">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 col-sm-12">
+                <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative feature-box-shadow-right">
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0 theme-head-font theme-txt-color">Portable & Compact</h3> <hr />
+                    <p class="mb-auto theme-main-font theme-txt-color">Bro ipsum dolor sit amet grab pipe flowy, booter caballerial stoked piste. Sketching frontside poaching ripper, pow pow wheels bro euro. 
+                        Switch sketching punter pow butter noodle wheels skinny glades avie. Gaper bonk stoked air 360 berm japan air.</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" alt="Portable and compact" src="./img/portable.png">
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>    
+    </section>
+    <section id="pricing-sec">
+        <div class="container py-3">
+            <header>
+              <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 theme-h2 theme-head-font theme-txt-color">Pricing</h1>
+                <p class="theme-main-font theme-txt-color theme-p"> Bro ipsum dolor sit amet grab pipe flowy, booter caballerial stoked piste. Sketching frontside poaching ripper, pow pow wheels bro euro. 
+                    Switch sketching punter pow butter noodle wheels skinny glades avie. Gaper bonk stoked air 360 berm japan air.
+                    Pow pow betty drop fatty. 360 frontside gaper jib. Giblets laps bro, trail swag greasy betty fatty nose. 
+                    Schwag afterbang daffy stoked gorby liftie flowy bear trap saddle noodle hurl carcass pow.</p>
+              </div>
+            </header>
+          
+            <main>
+              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-bold theme-head-font theme-txt-color-blue">Single Book</h4>
+                    </div>
+                    <div class="card-body theme-main-font">
+                      <h1 class="card-title pricing-card-title">$49<small class="text-body-secondary fw-light">/Free shipping</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Bro ipsum dolor sit</li>
+                        <li>skinny glades avie</li>
+                        <li>Giblets laps bro</li>
+                        <li>noodle hurl carcass pow</li>
+                        <li>daffy stoked gorby</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-outline-primary">Buy one now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-bold theme-head-font theme-txt-color-blue">A Bunch of 3</h4>
+                    </div>
+                    <div class="card-body theme-main-font">
+                      <h1 class="card-title pricing-card-title">$125<small class="text-body-secondary fw-light">/Free shipping</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>betty drop fatty</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy a bunch now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+        </div>
+    </section>
+    <section id="newsletter-sec">
+        <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="theme-main-font theme-txt-color">Section 1</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="theme-main-font theme-txt-color">Section 2</h5>
+                  <ul class="nav flex-column theme-main-font theme-txt-color">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="theme-main-font theme-txt-color">Section 3</h5>
+                  <ul class="nav flex-column theme-main-font theme-txt-color">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 theme-main-font theme-txt-color">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5 class="theme-main-font theme-txt-color">Subscribe to our newsletter</h5>
+                    <p class="theme-main-font theme-txt-color">Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address" spellcheck="false" data-ms-editor="true">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p class="theme-main-font theme-txt-color">© 2023 A Book, Inc. All rights reserved.</p>
+              </div>
+            </footer>
+        </div>
+    </section>
 </body>
 </html>
